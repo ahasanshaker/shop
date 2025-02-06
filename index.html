@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,173 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .fontSora{
+        .fontSora {
             font-family: "Sora", serif;
         }
     </style>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-               
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <!-- Sora Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
+
 <body class="fontSora">
-    
+    <!-- Header Section -->
+    <header class="container mx-auto bg-gradient-to-r from-[#FFFFFF] to-[#EFEBE3] ">
+        <!-- Nav bar -->
+        <nav class="px-16 py-5 ">
+            <div class="grid grid-cols-3 items-center">
+                <div>
+                    <img class="border border-2 border-dashed" src="c2-assets/logo-header.png" alt="">
+
+                </div>
+                <div>
+
+
+                    <ul class="flex gap-6 text-xl font-normal ">
+                        <li>Product</li>
+                        <li>Services</li>
+                        <li>Contact us</li>
+                    </ul>
+
+                </div>
+                <div class="flex justify-end items-center gap-4">
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="btn bg-white border rounded-lg border-[#179800]"> Login</button>
+                        <button class="btn btn-success text-white">Register</button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Banner Section -->
+        <section class="py-8 ">
+            <!-- Banner Title -->
+            <h1 class="texhero-vegetables.pngt-6xl text-center">
+                Freshness <span class="text-[#179800]">You Can <br>
+                    Count</span> On, Prices You’ll Love!
+            </h1>
+            <!-- Banner Description -->
+            <p class="text-2xl text-center mt-6">Shop your daily essentials at unbeatable prices. From fresh produce to
+                pantry <br> staples, we’ve got you covered every day!</p>
+            <!-- Banner Image -->
+            <img class="w-full h-[838px]" src="c2-assets/hero-vegetables.png" alt="">
+        </section>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <!-- Services Section -->
+        <section class="mx-20 my-10">
+            <!-- Section Title -->
+            <h3 class="text-4xl text-[#179800] pb-5 pl-10 ">Services</h3>
+            <!-- Services Card -->
+            <div class="flex flex-col md:flex-row gap-5 justify-evenly">
+                <div class="card bg-[#EFEBE3] w-96 ">
+                    <figure class="mt-5 ">
+                        <img class="bg-white rounded-[100px] " src="c2-assets/service.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">24/7 Services</h2>
+                        <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#EFEBE3] w-96 ">
+                    <figure class="mt-5 ">
+                        <img class="bg-white rounded-[100px] " src="c2-assets/service.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">24/7 Services</h2>
+                        <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#EFEBE3] w-96 ">
+                    <figure class="mt-5 ">
+                        <img class="bg-white rounded-[100px] " src="c2-assets/service.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">24/7 Services</h2>
+                        <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Popular Section -->
+        <section class="px-20 py-10 bg-[#EFEBE3]">
+            <!-- Popular Section Title -->
+            <h3 class="text-4xl text-[#179800] pb-5 ">Popular Products</h3>
+            <!-- Popular Card -->
+            <div class="flex">
+
+                <div class="card bg-base-100 w-96 ">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">30% off </h2>
+                        <p>Discover a world of treats, toys, and essentials handpicked for</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="card card-side bg-base-100">
+                        <figure>
+                          <img src="c2-assets/onion.png" alt="">
+                        
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="card-title font-medium">Onion 1 KG</h2>
+                          
+                          <p>$39.99</p>
+                        </div>
+                      </div>
+                    <div>item-3</div>
+                    <div>item-4</div>
+                    <div>item-5</div>
+                    <div>item-6</div>
+                    <div>item-7</div>
+                    <div>item-8</div>
+                    <div>item-9</div>
+                    <div>item-10</div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
